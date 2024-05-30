@@ -1,7 +1,7 @@
 export default function buildMenu() {
   const frag = document.createDocumentFragment();
   let heading = document.createElement('h1');
-  heading.textContent = 'JabberWok Menu';
+  heading.textContent = 'Menu';
   let para = document.createElement('p');
   para.textContent = 'At JabberWok, our menu is a tapestry of flavors, each dish crafted to take you on a journey through the mystical and the familiar.';
 
@@ -31,7 +31,7 @@ export default function buildMenu() {
     const entree3 = document.createElement('p');
     entree3.textContent = 'Tulgey Wood Prawns: Large prawns glazed with a delicate honey-walnut sauce, accompanied by candied walnuts and steamed broccoli.';
     const entree4 = document.createElement('p');
-    entree4.textContent = 'Mome Rath’s Delight: A seafood feast featuring scallops, squid, and mussels in a savory black bean sauce.';
+    entree4.textContent = "Mome Rath's Delight: A seafood feast featuring scallops, squid, and mussels in a savory black bean sauce.";
     const entree5 = document.createElement('p');
     entree5.textContent = 'Tumtum Tree Stir-Fry: A vibrant array of seasonal vegetables, tofu, and shiitake mushrooms, sautéed in a light garlic sauce.';
     const entree6 = document.createElement('p');
@@ -44,7 +44,7 @@ export default function buildMenu() {
     const desserts = document.createElement('div');
     desserts.classList.add('menu-row');
     const dessert1 = document.createElement('p');
-    dessert1.textContent = 'Jabberwock’s Dream: A delicate green tea cheesecake, topped with a dragon fruit glaze.';
+    dessert1.textContent = "Jabberwock's Dream: A delicate green tea cheesecake, topped with a dragon fruit glaze.";
     const dessert2 = document.createElement('p');
     dessert2.textContent = 'Frabjous Day Cake: A moist red bean cake, layered with matcha cream and adorned with edible flowers.';
     desserts.append(dessert1, dessert2);
