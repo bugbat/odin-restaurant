@@ -1,7 +1,11 @@
-export default function buildAbout(div) {
-  div.replaceChildren();
+export default function buildAbout() {
+  const frag = document.createDocumentFragment();
   let heading = document.createElement('h1');
-  heading.textContent = 'Welcome to our about page';
-  
-  div.appendChild(heading);
+  heading.textContent = 'About Us';
+  let para = document.createElement('p');
+  para.textContent = 'a';
+
+  frag.append(heading, para);
+
+  return frag;
 }

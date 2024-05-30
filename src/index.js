@@ -1,22 +1,26 @@
-import buildHome from './home.js'
-import buildMenu from './menu.js'
-import buildAbout from './about.js'
+import styles from './style.css'
+import buildHome from './home.js';
+import buildMenu from './menu.js';
+import buildAbout from './about.js';
 
 let contentDiv = document.querySelector('#content');
 
 // buttons
-const homeButton = document.querySelector('#home');
-const menuButton = document.querySelector('#menu');
-const aboutButton = document.querySelector('#about');
+const homeButton = document.querySelector('#home-btn');
+const menuButton = document.querySelector('#menu-btn');
+const aboutButton = document.querySelector('#about-btn');
 
-buildHome(contentDiv);
+contentDiv.appendChild(buildHome());
 
 homeButton.addEventListener('click', function() {
-  buildHome(contentDiv);
+  contentDiv.replaceChildren();
+  contentDiv.appendChild(buildHome());
 })
 menuButton.addEventListener('click', function() {
-  buildMenu(contentDiv);
+  contentDiv.replaceChildren();
+  contentDiv.appendChild(buildMenu());
 })
 aboutButton.addEventListener('click', function() {
-  buildAbout(contentDiv);
+  contentDiv.replaceChildren();
+  contentDiv.appendChild(buildAbout());
 })
