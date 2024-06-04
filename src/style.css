@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+body {
+  width: clamp(1fr, 50rem, 1fr);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 1rem
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+#menu {
+  width: max(50%, 25rem);
+  padding: 2rem 2rem;
+  outline: 2px solid gold;
+}
+
+.menu-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+  row-gap: 1rem;
+}
