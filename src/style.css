@@ -24,10 +24,26 @@ nav {
   gap: 1rem
 }
 
+nav button {
+  background-color: lightgoldenrodyellow;
+  border: 0px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+nav button:hover {
+  background-color: rgba(135, 206, 250, 0.479);
+}
+
+.selected {
+  background-color: rgba(135, 206, 250, 0.479);
+}
+
 #content {
-  display: grid;
+  display: grid; 
   grid-template-columns: 1fr;
   justify-content: center;
+  background-color:  rgba(135, 206, 250, 0.479);
 }
 
 #menu {

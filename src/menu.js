@@ -1,7 +1,5 @@
 export default function buildMenu() {
   const frag = document.createDocumentFragment();
-  let heading = document.createElement('h1');
-  heading.textContent = 'Menu';
   let para = document.createElement('p');
   para.textContent = 'At JabberWok, our menu is a tapestry of flavors, each dish crafted to take you on a journey through the mystical and the familiar.';
 
@@ -53,7 +51,7 @@ export default function buildMenu() {
   menu.append(appsHeader, apps, entreesHeader, entrees, dessertsHeader, desserts);
 
 
-  frag.append(heading, para, menu);
+  frag.append(para, menu);
 
   return frag;
 }
