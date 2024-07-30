@@ -12,30 +12,30 @@ const aboutButton = document.querySelector('#about-btn');
 const btnsArray = [homeButton, menuButton, aboutButton]
 
 contentDiv.appendChild(buildHome());
-homeButton.classList.add("selected");
+homeButton.disabled = true;
 
 
 homeButton.addEventListener('click', function() {
-  clearButtonClasses();
-  homeButton.classList.add("selected");
+  enableButtons();
+  homeButton.disabled = true;
   contentDiv.replaceChildren();
   contentDiv.appendChild(buildHome());
 })
 menuButton.addEventListener('click', function() {
-  clearButtonClasses();
-  menuButton.classList.add("selected");
+  enableButtons();
+  menuButton.disabled = true;
   contentDiv.replaceChildren();
   contentDiv.appendChild(buildMenu());
 })
 aboutButton.addEventListener('click', function() {
-  clearButtonClasses();
-  aboutButton.classList.add("selected");
+  enableButtons();
+  aboutButton.disabled = true;
   contentDiv.replaceChildren();
   contentDiv.appendChild(buildAbout());
 })
 
-function clearButtonClasses() {
+function enableButtons() {
   btnsArray.forEach(button => {
-    button.classList.remove("selected");
+    button.disabled = false;
   });
 }
