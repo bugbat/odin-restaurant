@@ -11,9 +11,8 @@ h1, h2 {
 }
 
 body {
-  width: clamp(1fr, 50rem, 1fr);
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: [left-gutter] clamp(2rem, 20rem, 20rem) [main] clamp(1fr, 100rem, 100rem) [right-gutter] clamp(2rem, 20rem, 20rem);
   justify-content: center;
 }
 
@@ -42,8 +41,13 @@ nav button:disabled {
   font-weight: bold;
   color: black;
 }
+header {
+  grid-column-start: main;
+
+}
 
 #content {
+  grid-column-start: main;
   display: grid; 
   grid-template-columns: 1fr;
   justify-content: center;
